@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zac's Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <div id="page">
+        <div id="calculator">
+          <div id="title">
+            Javascript Calculator
+          </div>
+          <div id="screenContainer">
+            <div id="screen">0</div>
+            <div id="equation">0</div>
+          </div>
+          <div id="buttonsContainer">
+            <div class="buttonsRow">
+              <button class="button redButton" onclick="clearButton()">AC</button>
+              <button class="button redButton" onclick="clearEntryButton()">CE</button>
+              <button onclick="operatorClick('/')" class="button">&#xf7;</button>
+              <button onclick="operatorClick('x')" class="button">X</button>
+            </div>
+            <div class="buttonsRow">
+              <button onclick="numberClick(7)" class="button">7</button>
+              <button onclick="numberClick(8)" class="button">8</button>
+              <button onclick="numberClick(9)" class="button">9</button>
+              <button onclick="operatorClick('-')" class="button">-</button>
+            </div>
+            <div class="buttonsRow">
+              <button onclick="numberClick(4)" class="button">4</button>
+              <button onclick="numberClick(5)" class="button">5</button>
+              <button onclick="numberClick(6)" class="button">6</button>
+              <button onclick="operatorClick('+')" class="button">+</button>
+            </div>
+            <div class="bottomRows">
+              <div id="bottomRowContainer">
+                <button onclick="numberClick(1)" class="numberButton button">1</button>
+                <button onclick="numberClick(2)" class="numberButton button">2</button>
+                <button onclick="numberClick(3)" class="numberButton button">3</button>
+              </div>
+              <button onclick="equalsClick(valA, valB, operatorKey)" id="equalButton">=</button>
+            </div>
+            <div class="bottomRows">
+               <div id="mostBottomRowContainer">
+                <button onclick="numberClick(0)" id="zeroButton">0</button>
+                 <button onclick="decimalClick()" class="button">.</button>
+              </div> 
+            </div>
+          </div> 
+        </div>
+      </div>
+      
+        <p id="footer">Coded by <a href="https://codepen.io/zacmoss/">Zac Moss</a></p>
+      
+      </body>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</html>
