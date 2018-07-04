@@ -20,7 +20,11 @@
 //the logic progresses and understand what is happening.
 
 var operators = {
-  '+': function(a, b) { return a + b },
+  '+': function(a, b) {
+    a = parseFloat(a);
+    b = parseFloat(b);
+    return (a + b);
+  },
   '-': function(a, b) { return a - b },
   'x': function(a, b) { return a * b }, // edit
   '/': function(a, b) { return a / b },
